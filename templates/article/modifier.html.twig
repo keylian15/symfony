@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification Article !
+{% endblock %}
+
+{% block body %}
+	<div id="layoutSidenav_content">
+		<main>
+			<div class="container-fluid px-4">
+				<h1 class="mt-4">Modification de l'article</h1>
+				<ol class="breadcrumb mb-4">
+					<li class="breadcrumb-item">
+						<a href="{{ path('app_article') }}">Article</a>
+					</li>
+					<li class="breadcrumb-item active">Modification de l'article</li>
+				</ol>
+
+				<div class="card mb-4">
+					<div class="card-body">
+						<p class="mb-0">
+							L'article avec l'ID :
+							{{ article.id }}
+							a été modifié avec succès !
+							<br>
+							Nouveau titre :
+							<strong>{{ article.titre }}</strong>
+						</p>
+					</div>
+				</div>
+
+				<div style="height: 100vh"></div>
+				<div class="card mb-4">
+					<div class="card-body">
+						When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+{% endblock %}

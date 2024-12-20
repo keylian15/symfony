@@ -22,6 +22,7 @@
 								<div class="card-body">
 									<h5 class="card-title">{{ article.titre }}
 									</h5>
+									<img src="{{ asset('uploads/images/' ~ article.Image) }}"/img>
 									<p class="card-text">{{ article.texte }}</p>
 									Publié le
 									{{ article.date|date('d/m/Y H:i') }}
